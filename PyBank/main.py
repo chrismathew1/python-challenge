@@ -22,7 +22,6 @@ with open(budget_csv) as csvfile:
     # Read each row of data after the header
     for row in csvreader:
         
-        # print(row[0])
         months.append(row[0])
         profit_loss.append(int(row[1]))
         average_change.append(int(row[1]) - previous_profit)
